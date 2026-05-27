@@ -11,13 +11,13 @@ namespace CopyConstructor
         public int age;
         public string name;
 
-        public person(int age, string name)
+        public person(int age, string name)//instance constructor
         {
             this.age = age;
             this.name = name;
         }
 
-        public person(person previousperson)
+        public person(person previousperson)//copy constructor
         {
             age = previousperson.age;
             name = previousperson.name;
